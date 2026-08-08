@@ -1,6 +1,6 @@
-## IMC Formalizations
+## project
 
-Formalizing [IMC](https://www.imc-math.org.uk/) problems in Lean 4
+Formalizing contest problems in Lean 4 not from the IMO or USAMO
 
 Problem Extraction files copied from https://github.com/dwrensha/compfiles
 

@@ -71,6 +71,7 @@ inductive ProblemTag where
 | Combinatorics : ProblemTag
 | Geometry : ProblemTag
 | Inequality : ProblemTag
+| Test : ProblemTag
 deriving Ord
 
 def ProblemTag.toNat (t : ProblemTag) : Nat := match t with
@@ -79,6 +80,7 @@ def ProblemTag.toNat (t : ProblemTag) : Nat := match t with
 | .Combinatorics => 2
 | .Geometry => 3
 | .Inequality => 4
+| .Test => 999
 
 instance : ToString ProblemTag where
   toString := fun p => match p with
@@ -87,6 +89,7 @@ instance : ToString ProblemTag where
     | .Combinatorics => "Combinatorics"
     | .NumberTheory => "Number Theory"
     | .Algebra => "Algebra"
+    | .Test => "test"
 
 structure ProblemFileMetadata where
   tags : List ProblemTag := []
