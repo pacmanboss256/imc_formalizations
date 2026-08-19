@@ -1,6 +1,6 @@
 /-
 Copyright (c) 2026 Pacmanboss256. All rights reserved.
-Released under Apache 2.0 license as described in the file LICENSE.
+Released under GNU 3.0 license as described in the file LICENSE.
 Authors: Pacmanboss256
 -/
 
@@ -20,7 +20,7 @@ problem_file { tags := [.NumberTheory] }
 Find all natural numbers $n$ for which $2^8 +2^{11} +2^n$ is a perfect square.
 -/
 
-namespace imo1973SL23
+namespace imo1979SL23
 
 determine solution_set: Set (ℕ) := {12}
 
@@ -153,50 +153,4 @@ theorem imo1973_SL23 (n:ℕ): n ∈ solution_set ↔ IsSquare (2^8 + 2^11 + 2^n)
   rcases n_opts with h | h | h | h | h | h | h | h
   all_goals (rw [h] at h1; simp at h1; norm_num at h1)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-end imo1973SL23
+end imo1979SL23
